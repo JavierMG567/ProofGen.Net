@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "r9nKJCzLwpnhPQ1+dpX6jZWqBTyb4y0WJKJ5aXPGa9Y=",
+  "Source": "ProofGen.Net.GrpcService",
+  "BasePath": "_content/ProofGen.Net.GrpcService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

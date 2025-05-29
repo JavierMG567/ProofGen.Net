@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "Kt0WCyyvz8c=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Infrastructure\\ProofGen.Net.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\javie\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\javie\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\javie\\.nuget\\packages\\questpdf\\2025.5.0\\questpdf.2025.5.0.nupkg.sha512",
+    "C:\\Users\\javie\\.nuget\\packages\\sixlabors.imagesharp\\3.1.8\\sixlabors.imagesharp.3.1.8.nupkg.sha512",
+    "C:\\Users\\javie\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512",
+    "C:\\Users\\javie\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\javie\\.nuget\\packages\\tesseract\\5.2.0\\tesseract.5.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

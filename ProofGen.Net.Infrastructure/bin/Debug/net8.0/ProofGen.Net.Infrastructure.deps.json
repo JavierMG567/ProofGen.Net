@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ProofGen.Net.Infrastructure/1.0.0": {
+        "dependencies": {
+          "ProofGen.Net.Application": "1.0.0",
+          "ProofGen.Net.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ProofGen.Net.Infrastructure.dll": {}
+        }
+      },
+      "ProofGen.Net.Application/1.0.0": {
+        "dependencies": {
+          "ProofGen.Net.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ProofGen.Net.Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ProofGen.Net.Domain/1.0.0": {
+        "runtime": {
+          "ProofGen.Net.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProofGen.Net.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProofGen.Net.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProofGen.Net.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

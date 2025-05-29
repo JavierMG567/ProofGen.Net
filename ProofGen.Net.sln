@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5105F90A-26BC-43FF-B5D0-A670125F7680}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EECF310B-0406-43A2-93BE-71A64891B534}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofGen.Net.Api", "ProofGen.Net.Api\ProofGen.Net.Api.csproj", "{A56EAC2F-6552-406F-AC59-6F7AB61AAE0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofGen.Net.Application", "ProofGen.Net.Application\ProofGen.Net.Application.csproj", "{4F034E15-D6E2-4456-9452-10410069FBBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofGen.Net.Domain", "ProofGen.Net.Domain\ProofGen.Net.Domain.csproj", "{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofGen.Net.Infrastructure", "ProofGen.Net.Infrastructure\ProofGen.Net.Infrastructure.csproj", "{7719248D-DA47-403F-A00D-FDB30887ED7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofGen.Net.GrpcService", "ProofGen.Net.GrpcService\ProofGen.Net.GrpcService.csproj", "{37773B34-3115-4685-A1BE-1316C09C9AA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofGen.Net.Tests", "ProofGen.Net.Tests\ProofGen.Net.Tests.csproj", "{D9AACBD7-CA6E-4FE4-AE3B-2BF8EEC54631}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A56EAC2F-6552-406F-AC59-6F7AB61AAE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56EAC2F-6552-406F-AC59-6F7AB61AAE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56EAC2F-6552-406F-AC59-6F7AB61AAE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56EAC2F-6552-406F-AC59-6F7AB61AAE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F034E15-D6E2-4456-9452-10410069FBBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F034E15-D6E2-4456-9452-10410069FBBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F034E15-D6E2-4456-9452-10410069FBBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F034E15-D6E2-4456-9452-10410069FBBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7719248D-DA47-403F-A00D-FDB30887ED7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7719248D-DA47-403F-A00D-FDB30887ED7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7719248D-DA47-403F-A00D-FDB30887ED7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7719248D-DA47-403F-A00D-FDB30887ED7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37773B34-3115-4685-A1BE-1316C09C9AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37773B34-3115-4685-A1BE-1316C09C9AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37773B34-3115-4685-A1BE-1316C09C9AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37773B34-3115-4685-A1BE-1316C09C9AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9AACBD7-CA6E-4FE4-AE3B-2BF8EEC54631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9AACBD7-CA6E-4FE4-AE3B-2BF8EEC54631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9AACBD7-CA6E-4FE4-AE3B-2BF8EEC54631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9AACBD7-CA6E-4FE4-AE3B-2BF8EEC54631}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A56EAC2F-6552-406F-AC59-6F7AB61AAE0C} = {5105F90A-26BC-43FF-B5D0-A670125F7680}
+		{4F034E15-D6E2-4456-9452-10410069FBBF} = {5105F90A-26BC-43FF-B5D0-A670125F7680}
+		{3C27E40C-6D89-44F4-8DC1-B47D24D86A89} = {5105F90A-26BC-43FF-B5D0-A670125F7680}
+		{7719248D-DA47-403F-A00D-FDB30887ED7F} = {5105F90A-26BC-43FF-B5D0-A670125F7680}
+		{37773B34-3115-4685-A1BE-1316C09C9AA7} = {5105F90A-26BC-43FF-B5D0-A670125F7680}
+		{D9AACBD7-CA6E-4FE4-AE3B-2BF8EEC54631} = {EECF310B-0406-43A2-93BE-71A64891B534}
+	EndGlobalSection
+EndGlobal

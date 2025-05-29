@@ -1,0 +1,329 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F034E15-D6E2-4456-9452-10410069FBBF}|ProofGen.Net.Application\\ProofGen.Net.Application.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.application\\services\\metadataretrieveticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F034E15-D6E2-4456-9452-10410069FBBF}|ProofGen.Net.Application\\ProofGen.Net.Application.csproj|solutionrelative:proofgen.net.application\\services\\metadataretrieveticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F034E15-D6E2-4456-9452-10410069FBBF}|ProofGen.Net.Application\\ProofGen.Net.Application.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.application\\services\\ticketextractorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F034E15-D6E2-4456-9452-10410069FBBF}|ProofGen.Net.Application\\ProofGen.Net.Application.csproj|solutionrelative:proofgen.net.application\\services\\ticketextractorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A56EAC2F-6552-406F-AC59-6F7AB61AAE0C}|ProofGen.Net.Api\\ProofGen.Net.Api.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A56EAC2F-6552-406F-AC59-6F7AB61AAE0C}|ProofGen.Net.Api\\ProofGen.Net.Api.csproj|solutionrelative:proofgen.net.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F034E15-D6E2-4456-9452-10410069FBBF}|ProofGen.Net.Application\\ProofGen.Net.Application.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.application\\services\\ticketparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F034E15-D6E2-4456-9452-10410069FBBF}|ProofGen.Net.Application\\ProofGen.Net.Application.csproj|solutionrelative:proofgen.net.application\\services\\ticketparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}|ProofGen.Net.Domain\\ProofGen.Net.Domain.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.domain\\interfaces\\iticketparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}|ProofGen.Net.Domain\\ProofGen.Net.Domain.csproj|solutionrelative:proofgen.net.domain\\interfaces\\iticketparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}|ProofGen.Net.Domain\\ProofGen.Net.Domain.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.domain\\interfaces\\imetadataretrieveticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}|ProofGen.Net.Domain\\ProofGen.Net.Domain.csproj|solutionrelative:proofgen.net.domain\\interfaces\\imetadataretrieveticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F034E15-D6E2-4456-9452-10410069FBBF}|ProofGen.Net.Application\\ProofGen.Net.Application.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.application\\services\\tesseractocrengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F034E15-D6E2-4456-9452-10410069FBBF}|ProofGen.Net.Application\\ProofGen.Net.Application.csproj|solutionrelative:proofgen.net.application\\services\\tesseractocrengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F034E15-D6E2-4456-9452-10410069FBBF}|ProofGen.Net.Application\\ProofGen.Net.Application.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.application\\services\\productextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F034E15-D6E2-4456-9452-10410069FBBF}|ProofGen.Net.Application\\ProofGen.Net.Application.csproj|solutionrelative:proofgen.net.application\\services\\productextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F034E15-D6E2-4456-9452-10410069FBBF}|ProofGen.Net.Application\\ProofGen.Net.Application.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.application\\services\\imageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F034E15-D6E2-4456-9452-10410069FBBF}|ProofGen.Net.Application\\ProofGen.Net.Application.csproj|solutionrelative:proofgen.net.application\\services\\imageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}|ProofGen.Net.Domain\\ProofGen.Net.Domain.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.domain\\interfaces\\iproductextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}|ProofGen.Net.Domain\\ProofGen.Net.Domain.csproj|solutionrelative:proofgen.net.domain\\interfaces\\iproductextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}|ProofGen.Net.Domain\\ProofGen.Net.Domain.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.domain\\interfaces\\iocrengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}|ProofGen.Net.Domain\\ProofGen.Net.Domain.csproj|solutionrelative:proofgen.net.domain\\interfaces\\iocrengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}|ProofGen.Net.Domain\\ProofGen.Net.Domain.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}|ProofGen.Net.Domain\\ProofGen.Net.Domain.csproj|solutionrelative:proofgen.net.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}|ProofGen.Net.Domain\\ProofGen.Net.Domain.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.domain\\interfaces\\iticketextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}|ProofGen.Net.Domain\\ProofGen.Net.Domain.csproj|solutionrelative:proofgen.net.domain\\interfaces\\iticketextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}|ProofGen.Net.Domain\\ProofGen.Net.Domain.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.domain\\interfaces\\iimageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}|ProofGen.Net.Domain\\ProofGen.Net.Domain.csproj|solutionrelative:proofgen.net.domain\\interfaces\\iimageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}|ProofGen.Net.Domain\\ProofGen.Net.Domain.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.domain\\entities\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C27E40C-6D89-44F4-8DC1-B47D24D86A89}|ProofGen.Net.Domain\\ProofGen.Net.Domain.csproj|solutionrelative:proofgen.net.domain\\entities\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F034E15-D6E2-4456-9452-10410069FBBF}|ProofGen.Net.Application\\ProofGen.Net.Application.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.application\\proofgen.net.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4F034E15-D6E2-4456-9452-10410069FBBF}|ProofGen.Net.Application\\ProofGen.Net.Application.csproj|solutionrelative:proofgen.net.application\\proofgen.net.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A56EAC2F-6552-406F-AC59-6F7AB61AAE0C}|ProofGen.Net.Api\\ProofGen.Net.Api.csproj|c:\\users\\javie\\source\\repos\\proofgen.net\\proofgen.net.api\\proofgen.net.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A56EAC2F-6552-406F-AC59-6F7AB61AAE0C}|ProofGen.Net.Api\\ProofGen.Net.Api.csproj|solutionrelative:proofgen.net.api\\proofgen.net.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 135,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 610,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TicketExtractorService.cs",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Application\\Services\\TicketExtractorService.cs",
+              "RelativeDocumentMoniker": "ProofGen.Net.Application\\Services\\TicketExtractorService.cs",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Application\\Services\\TicketExtractorService.cs",
+              "RelativeToolTip": "ProofGen.Net.Application\\Services\\TicketExtractorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T01:36:46.158Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Api\\Program.cs",
+              "RelativeDocumentMoniker": "ProofGen.Net.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Api\\Program.cs",
+              "RelativeToolTip": "ProofGen.Net.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T00:19:18.278Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "ProofGen.Net.Domain\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "ProofGen.Net.Domain\\Entities\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T00:49:19.075Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TicketParser.cs",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Application\\Services\\TicketParser.cs",
+              "RelativeDocumentMoniker": "ProofGen.Net.Application\\Services\\TicketParser.cs",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Application\\Services\\TicketParser.cs",
+              "RelativeToolTip": "ProofGen.Net.Application\\Services\\TicketParser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T02:48:36.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TesseractOcrEngine.cs",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Application\\Services\\TesseractOcrEngine.cs",
+              "RelativeDocumentMoniker": "ProofGen.Net.Application\\Services\\TesseractOcrEngine.cs",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Application\\Services\\TesseractOcrEngine.cs",
+              "RelativeToolTip": "ProofGen.Net.Application\\Services\\TesseractOcrEngine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T02:47:30.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ImageProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Application\\Services\\ImageProcessor.cs",
+              "RelativeDocumentMoniker": "ProofGen.Net.Application\\Services\\ImageProcessor.cs",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Application\\Services\\ImageProcessor.cs",
+              "RelativeToolTip": "ProofGen.Net.Application\\Services\\ImageProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T02:45:21.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ITicketExtractor.cs",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Domain\\Interfaces\\ITicketExtractor.cs",
+              "RelativeDocumentMoniker": "ProofGen.Net.Domain\\Interfaces\\ITicketExtractor.cs",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Domain\\Interfaces\\ITicketExtractor.cs",
+              "RelativeToolTip": "ProofGen.Net.Domain\\Interfaces\\ITicketExtractor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T02:41:38.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ITicketParser.cs",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Domain\\Interfaces\\ITicketParser.cs",
+              "RelativeDocumentMoniker": "ProofGen.Net.Domain\\Interfaces\\ITicketParser.cs",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Domain\\Interfaces\\ITicketParser.cs",
+              "RelativeToolTip": "ProofGen.Net.Domain\\Interfaces\\ITicketParser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T02:41:26.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IOcrEngine.cs",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Domain\\Interfaces\\IOcrEngine.cs",
+              "RelativeDocumentMoniker": "ProofGen.Net.Domain\\Interfaces\\IOcrEngine.cs",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Domain\\Interfaces\\IOcrEngine.cs",
+              "RelativeToolTip": "ProofGen.Net.Domain\\Interfaces\\IOcrEngine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T02:40:49.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IImageProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Domain\\Interfaces\\IImageProcessor.cs",
+              "RelativeDocumentMoniker": "ProofGen.Net.Domain\\Interfaces\\IImageProcessor.cs",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Domain\\Interfaces\\IImageProcessor.cs",
+              "RelativeToolTip": "ProofGen.Net.Domain\\Interfaces\\IImageProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T02:40:16.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Domain\\Entities\\Ticket.cs",
+              "RelativeDocumentMoniker": "ProofGen.Net.Domain\\Entities\\Ticket.cs",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Domain\\Entities\\Ticket.cs",
+              "RelativeToolTip": "ProofGen.Net.Domain\\Entities\\Ticket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T03:42:19.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProofGen.Net.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Api\\ProofGen.Net.Api.csproj",
+              "RelativeDocumentMoniker": "ProofGen.Net.Api\\ProofGen.Net.Api.csproj",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Api\\ProofGen.Net.Api.csproj",
+              "RelativeToolTip": "ProofGen.Net.Api\\ProofGen.Net.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-27T02:55:45.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProofGen.Net.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Application\\ProofGen.Net.Application.csproj",
+              "RelativeDocumentMoniker": "ProofGen.Net.Application\\ProofGen.Net.Application.csproj",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Application\\ProofGen.Net.Application.csproj",
+              "RelativeToolTip": "ProofGen.Net.Application\\ProofGen.Net.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-27T02:47:29.136Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 610,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductExtractor.cs",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Application\\Services\\ProductExtractor.cs",
+              "RelativeDocumentMoniker": "ProofGen.Net.Application\\Services\\ProductExtractor.cs",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Application\\Services\\ProductExtractor.cs",
+              "RelativeToolTip": "ProofGen.Net.Application\\Services\\ProductExtractor.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAA5wCQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T17:17:02.891Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IProductExtractor.cs",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Domain\\Interfaces\\IProductExtractor.cs",
+              "RelativeDocumentMoniker": "ProofGen.Net.Domain\\Interfaces\\IProductExtractor.cs",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Domain\\Interfaces\\IProductExtractor.cs",
+              "RelativeToolTip": "ProofGen.Net.Domain\\Interfaces\\IProductExtractor.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T17:12:57.161Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IMetadataRetrieveTicket.cs",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Domain\\Interfaces\\IMetadataRetrieveTicket.cs",
+              "RelativeDocumentMoniker": "ProofGen.Net.Domain\\Interfaces\\IMetadataRetrieveTicket.cs",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Domain\\Interfaces\\IMetadataRetrieveTicket.cs",
+              "RelativeToolTip": "ProofGen.Net.Domain\\Interfaces\\IMetadataRetrieveTicket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T17:53:51.914Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MetadataRetrieveTicket.cs",
+              "DocumentMoniker": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Application\\Services\\MetadataRetrieveTicket.cs",
+              "RelativeDocumentMoniker": "ProofGen.Net.Application\\Services\\MetadataRetrieveTicket.cs",
+              "ToolTip": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Application\\Services\\MetadataRetrieveTicket.cs",
+              "RelativeToolTip": "ProofGen.Net.Application\\Services\\MetadataRetrieveTicket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T17:57:37.182Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Domain\bin\Debug\net8.0\ProofGen.Net.Domain.deps.json
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Domain\bin\Debug\net8.0\ProofGen.Net.Domain.dll
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Domain\bin\Debug\net8.0\ProofGen.Net.Domain.pdb
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Domain\obj\Debug\net8.0\ProofGen.Net.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Domain\obj\Debug\net8.0\ProofGen.Net.Domain.AssemblyInfoInputs.cache
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Domain\obj\Debug\net8.0\ProofGen.Net.Domain.AssemblyInfo.cs
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Domain\obj\Debug\net8.0\ProofGen.Net.Domain.csproj.CoreCompileInputs.cache
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Domain\obj\Debug\net8.0\ProofGen.Net.Domain.dll
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Domain\obj\Debug\net8.0\refint\ProofGen.Net.Domain.dll
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Domain\obj\Debug\net8.0\ProofGen.Net.Domain.pdb
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Domain\obj\Debug\net8.0\ref\ProofGen.Net.Domain.dll
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Domain\obj\Debug\net8.0\ProofGen.Net.Domain.csproj.AssemblyReference.cache

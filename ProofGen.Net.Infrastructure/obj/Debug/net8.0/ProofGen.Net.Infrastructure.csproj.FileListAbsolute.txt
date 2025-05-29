@@ -1,0 +1,17 @@
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\bin\Debug\net8.0\ProofGen.Net.Infrastructure.deps.json
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\bin\Debug\net8.0\ProofGen.Net.Infrastructure.dll
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\bin\Debug\net8.0\ProofGen.Net.Infrastructure.pdb
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\bin\Debug\net8.0\ProofGen.Net.Application.dll
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\bin\Debug\net8.0\ProofGen.Net.Domain.dll
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\bin\Debug\net8.0\ProofGen.Net.Application.pdb
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\bin\Debug\net8.0\ProofGen.Net.Domain.pdb
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\obj\Debug\net8.0\ProofGen.Net.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\obj\Debug\net8.0\ProofGen.Net.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\obj\Debug\net8.0\ProofGen.Net.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\obj\Debug\net8.0\ProofGen.Net.Infrastructure.AssemblyInfo.cs
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\obj\Debug\net8.0\ProofGen.Net.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\obj\Debug\net8.0\ProofGen.47BC5FCC.Up2Date
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\obj\Debug\net8.0\ProofGen.Net.Infrastructure.dll
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\obj\Debug\net8.0\refint\ProofGen.Net.Infrastructure.dll
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\obj\Debug\net8.0\ProofGen.Net.Infrastructure.pdb
+C:\Users\javie\source\repos\ProofGen.Net\ProofGen.Net.Infrastructure\obj\Debug\net8.0\ref\ProofGen.Net.Infrastructure.dll
