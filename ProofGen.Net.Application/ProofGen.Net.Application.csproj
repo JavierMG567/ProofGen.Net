@@ -7,6 +7,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="itext7" Version="7.2.5" />
+		<PackageReference Include="itext.bouncy-castle-adapter" Version="7.2.5" />
 		<PackageReference Include="SixLabors.ImageSharp" Version="3.1.8" />
 		<PackageReference Include="Tesseract" Version="5.2.0" />
 	</ItemGroup>
