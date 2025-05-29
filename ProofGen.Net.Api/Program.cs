@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Models;
+using ProofGen.Net.Api.Endpoints;
 using ProofGen.Net.Application.Services;
 using ProofGen.Net.Domain.Entities;
 using ProofGen.Net.Domain.Interfaces;
@@ -50,34 +51,8 @@ app.UseStaticFiles();   // Habilita wwwroot
 
 app.UseCors(); // <<--- MUY IMPORTANTE: antes de cualquier endpoint
 
-// Endpoint personalizado
-app.MapPost("/api/tickets/extraer", async (HttpRequest request, ITicketExtractor extractor) =>
-{
-    var form = await request.ReadFormAsync();
-    var archivo = form.Files.FirstOrDefault();
-
-    if (archivo == null || archivo.Length == 0)
-        return Results.BadRequest("Archivo no proporcionado");
-
-    var resultado = await extractor.Extract(archivo);
-    return Results.Ok(resultado);
-})
-.Accepts<IFormFile>("multipart/form-data")
-.Produces<Ticket>(StatusCodes.Status200OK)
-.WithName("ExtraerTicket")
-.WithTags("Tickets");
-
-app.MapPost("/api/ticket/pdf", ([FromBody] Ticket ticket, ITicketPdfService ticketPdfService) =>
-{
-    if (ticket == null)
-    {
-        return Results.BadRequest("Datos del ticket inválidos");
-    }
-
-    var pdfBytes = ticketPdfService.Generate(ticket);
-
-    return Results.File(pdfBytes, "application/pdf", "ticket.pdf");
-});
-
+// Endpoints
+app.MapExtraction();
+app.MapGeneration();
 
 app.Run();
