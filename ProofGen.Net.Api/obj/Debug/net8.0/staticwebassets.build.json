@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GKf0fryyBt8zQ4E/pGo2C1s8YOJq+2T4rY9dyIVRkoE=",
+  "Hash": "8MeR5bWzNlk4/4kAcsuU+06MJHAjqRbMw5lO/ToIKIM=",
   "Source": "ProofGen.Net.Api",
   "BasePath": "_content/ProofGen.Net.Api",
   "Mode": "Default",
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mk784mxas6",
-      "Integrity": "VgR61xQRtfU120yDBgowVvUgimutEjZsHN1yQOP8zYk=",
+      "Fingerprint": "pzwsma3uu3",
+      "Integrity": "BYTV5nVbOdcY6jkFII3tUc/80INOHfxrbVPPchGCXZk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pqcao87ybt",
-      "Integrity": "AYegLVRrMsd75ntZ1gILzmLTY+4TB/5kuPZXISk9Z7Y=",
+      "Fingerprint": "mixcbbov92",
+      "Integrity": "UpTTWckAesuobAcH5oRli7RjrT6Kvun+gQ/0CT16QWo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\main.js"
@@ -104,7 +104,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 23:00:56 GMT"
+          "Value": "Fri, 30 May 2025 03:50:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -141,7 +141,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 23:00:56 GMT"
+          "Value": "Fri, 30 May 2025 03:50:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -174,7 +174,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5895"
+          "Value": "10096"
         },
         {
           "Name": "Content-Type",
@@ -182,11 +182,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VgR61xQRtfU120yDBgowVvUgimutEjZsHN1yQOP8zYk=\""
+          "Value": "\"BYTV5nVbOdcY6jkFII3tUc/80INOHfxrbVPPchGCXZk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 30 May 2025 01:40:18 GMT"
+          "Value": "Fri, 30 May 2025 22:23:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -196,12 +196,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-VgR61xQRtfU120yDBgowVvUgimutEjZsHN1yQOP8zYk="
+          "Value": "sha256-BYTV5nVbOdcY6jkFII3tUc/80INOHfxrbVPPchGCXZk="
         }
       ]
     },
     {
-      "Route": "index.mk784mxas6.html",
+      "Route": "index.pzwsma3uu3.html",
       "AssetFile": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Api\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -211,7 +211,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5895"
+          "Value": "10096"
         },
         {
           "Name": "Content-Type",
@@ -219,11 +219,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VgR61xQRtfU120yDBgowVvUgimutEjZsHN1yQOP8zYk=\""
+          "Value": "\"BYTV5nVbOdcY6jkFII3tUc/80INOHfxrbVPPchGCXZk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 30 May 2025 01:40:18 GMT"
+          "Value": "Fri, 30 May 2025 22:23:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -233,7 +233,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "mk784mxas6"
+          "Value": "pzwsma3uu3"
         },
         {
           "Name": "label",
@@ -241,7 +241,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-VgR61xQRtfU120yDBgowVvUgimutEjZsHN1yQOP8zYk="
+          "Value": "sha256-BYTV5nVbOdcY6jkFII3tUc/80INOHfxrbVPPchGCXZk="
         }
       ]
     },
@@ -256,7 +256,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4845"
+          "Value": "9643"
         },
         {
           "Name": "Content-Type",
@@ -264,11 +264,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AYegLVRrMsd75ntZ1gILzmLTY+4TB/5kuPZXISk9Z7Y=\""
+          "Value": "\"UpTTWckAesuobAcH5oRli7RjrT6Kvun+gQ/0CT16QWo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 30 May 2025 01:41:45 GMT"
+          "Value": "Fri, 30 May 2025 22:25:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -278,12 +278,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-AYegLVRrMsd75ntZ1gILzmLTY+4TB/5kuPZXISk9Z7Y="
+          "Value": "sha256-UpTTWckAesuobAcH5oRli7RjrT6Kvun+gQ/0CT16QWo="
         }
       ]
     },
     {
-      "Route": "js/main.pqcao87ybt.js",
+      "Route": "js/main.mixcbbov92.js",
       "AssetFile": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Api\\wwwroot\\js\\main.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -293,7 +293,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4845"
+          "Value": "9643"
         },
         {
           "Name": "Content-Type",
@@ -301,11 +301,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AYegLVRrMsd75ntZ1gILzmLTY+4TB/5kuPZXISk9Z7Y=\""
+          "Value": "\"UpTTWckAesuobAcH5oRli7RjrT6Kvun+gQ/0CT16QWo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 30 May 2025 01:41:45 GMT"
+          "Value": "Fri, 30 May 2025 22:25:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -315,7 +315,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pqcao87ybt"
+          "Value": "mixcbbov92"
         },
         {
           "Name": "label",
@@ -323,7 +323,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-AYegLVRrMsd75ntZ1gILzmLTY+4TB/5kuPZXISk9Z7Y="
+          "Value": "sha256-UpTTWckAesuobAcH5oRli7RjrT6Kvun+gQ/0CT16QWo="
         }
       ]
     }

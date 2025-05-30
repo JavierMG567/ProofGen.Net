@@ -91,6 +91,10 @@
       "Ticket": {
         "type": "object",
         "properties": {
+          "billetId": {
+            "type": "string",
+            "nullable": true
+          },
           "fullName": {
             "type": "string",
             "nullable": true

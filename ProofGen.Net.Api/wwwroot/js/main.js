@@ -1,4 +1,5 @@
 ﻿const resultado = document.getElementById("resultado");
+const billingTicketEditor = document.getElementById("billingEditor");
 let lastTicketData = null;
 
 const loadingBar = document.getElementById("loadingBar");
@@ -154,6 +155,93 @@ document.getElementById("downloadPdf").addEventListener("click", async function 
         alert("Error al descargar el PDF: " + err.message);
     }
 });
+
+document.getElementById("editTicket").addEventListener("click", function () {
+    if (!lastTicketData) return;
+
+    // Mostrar editor
+    billingTicketEditor.classList.remove("hidden");
+
+    const editorContainer = document.getElementById("billingEditor");
+    const separator = document.getElementById("separator");
+    const saveButton = document.getElementById("saveTicketEdition");
+
+    separator.classList.remove("hidden");
+    saveButton.classList.remove("hidden");
+
+    // Limpiar contenido previo
+    editorContainer.querySelectorAll(".ticket-edit-form").forEach(el => el.remove());
+
+    const form = document.createElement("div");
+    form.className = "ticket-edit-form space-y-4 mt-4";
+
+    // Campos editables
+    const fields = [
+        { label: "Legal Name", key: "legalName" },
+        { label: "Date", key: "date", type: "date" },
+        { label: "Hour", key: "hours" },
+        { label: "Checkout", key: "checkOut" },
+        { label: "Cashier", key: "cashier" },
+        { label: "Federal Tax Registry", key: "federalTaxpayerRegistry" },
+        { label: "Address", key: "address", type: "textarea" }
+    ];
+
+    fields.forEach(({ label, key, type }) => {
+        const wrapper = document.createElement("div");
+        const inputId = `edit-${key}`;
+
+        const labelEl = document.createElement("label");
+        labelEl.textContent = label;
+        labelEl.setAttribute("for", inputId);
+        labelEl.className = "block text-sm font-medium text-gray-700 mb-1";
+
+        let input;
+        if (type === "textarea") {
+            input = document.createElement("textarea");
+            input.rows = 3;
+        } else {
+            input = document.createElement("input");
+            input.type = type || "text";
+        }
+
+        input.className = "w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400";
+        input.id = inputId;
+        input.value = lastTicketData[key] || "";
+
+        wrapper.appendChild(labelEl);
+        wrapper.appendChild(input);
+        form.appendChild(wrapper);
+    });
+
+    editorContainer.insertBefore(form, separator);
+});
+
+document.getElementById("saveTicketEdition").addEventListener("click", () => {
+    const updatedData = { ...lastTicketData };
+
+    // Recoger campos actualizados
+    const keys = ["legalName", "date", "hours", "checkOut", "cashier", "federalTaxpayerRegistry", "address"];
+
+    keys.forEach(key => {
+        const input = document.getElementById(`edit-${key}`);
+        if (input) {
+            updatedData[key] = input.value;
+        }
+    });
+
+    // Actualizar los datos del último ticket
+    lastTicketData = updatedData;
+
+    // Limpiar y volver a renderizar el ticket
+    resultado.innerHTML = "";
+    resultado.insertAdjacentHTML('beforeend', renderTicket(updatedData));
+
+    // Ocultar el editor
+    billingTicketEditor.classList.add("hidden");
+    document.getElementById("separator").classList.add("hidden");
+    document.getElementById("saveTicketEdition").classList.add("hidden");
+});
+
 
 document.getElementById("archivo").addEventListener("change", function () {
     const nombreArchivo = this.files[0] ? this.files[0].name : "Ningún archivo seleccionado";
