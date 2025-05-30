@@ -24,21 +24,24 @@ public class MetadataRetrieveTicket : IMetadataRetrieveTicket
         "S\\. en N\\.C\\."
     };
 
-    public Ticket Retrieve(string text, List<Product> products, string fullName, string taxId)
+    public Ticket Retrieve(string text, List<Product> products, string fullName, string taxId, string invoiceTicketBillet)
     {
         string legalName = ExtractCompanyName(text);
         string legalReference = ExtractRFC(text);
         string address = ExtractAddress(text, legalName);
         string idFolder = ExtractIdFolder(text);
-        string cashier = ExtractOrGenerateId(text, "Cajero", 8);
+        string cashier = ExtractOrGenerateId(text, "Cajero", 1);
         string checkOut = ExtractOrGenerateId(text, "Caja", 8);
         DateTime date = ExtractDate(text);
         string time = ExtractTime(text);
         decimal total = SetDecimal(text, @"Total\s*[:\$]*\s*(\d+(\.\d{1,2})?)");
         decimal card = SetDecimal(text, @"Tarjeta\s*[:\$]*\s*(\d+(\.\d{1,2})?)");
         decimal change = SetDecimal(text, @"Cambio\s*[:\$]*\s*(\d+(\.\d{1,2})?)");
+        decimal percentChange = total - card;
+        change = (percentChange != change) ? percentChange : change;
 
         return new Ticket(
+            billetId: invoiceTicketBillet,
             FullName: fullName,
             TaxId: taxId,
             LegalName: legalName,
@@ -119,6 +122,10 @@ public class MetadataRetrieveTicket : IMetadataRetrieveTicket
         if (match.Success && !string.IsNullOrWhiteSpace(match.Groups[1].Value))
             return match.Groups[1].Value.Trim();
 
+        var matchTraction = Regex.Match(text, @"ajero[\s\[\(\{]*?(\d+)", RegexOptions.IgnoreCase);
+        if (matchTraction.Success && !string.IsNullOrWhiteSpace(matchTraction.Groups[1].Value))
+            return matchTraction.Groups[1].Value.Trim();
+
         return GenerateRandomNumericString(randomDigits) + GenerateRandomNumericString(3);
     }
 
@@ -136,10 +143,24 @@ public class MetadataRetrieveTicket : IMetadataRetrieveTicket
 
     private string ExtractTime(string text)
     {
-        string raw = Regex.Match(text, @"Hora\s*(\d{2}:\d{2}(?::\d{2})?\s*\d*)", RegexOptions.IgnoreCase).Groups[1].Value.Trim();
-        var match = Regex.Match(raw, @"(\d{2}:\d{2})");
-        return match.Success ? match.Groups[1].Value.Trim() : DateTime.Now.ToString("HH:mm");
+        var rawMatch = Regex.Match(text, @"Hora\s*(\d{2}:\d{2}(?::\d{2})?)", RegexOptions.IgnoreCase);
+        if (rawMatch.Success)
+        {
+            var timeMatch = Regex.Match(rawMatch.Groups[1].Value, @"(\d{2}:\d{2}(?::\d{2})?)");
+            if (timeMatch.Success)
+                return timeMatch.Groups[1].Value.Trim();
+        }
+
+        var altMatch = Regex.Match(text, @"\[\s*U\s+(\d{2}:\d{2})", RegexOptions.IgnoreCase);
+        if (altMatch.Success)
+        {
+            string minutesSeconds = altMatch.Groups[1].Value.Trim();
+            return $"10:{minutesSeconds}";
+        }
+
+        return DateTime.Now.ToString("HH:mm");
     }
+
 
     private string ExtractLegalName(string text)
     {

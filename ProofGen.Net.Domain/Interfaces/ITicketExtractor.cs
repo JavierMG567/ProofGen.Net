@@ -9,5 +9,5 @@ using System.Threading.Tasks;
 namespace ProofGen.Net.Domain.Interfaces;
 public interface ITicketExtractor
 {
-    Task<Ticket> Extract(IFormFile image, string fullName, string taxId);
+    Task<Ticket> Extract(IFormFile image, string fullName, string taxId, string invoiceTicketBillet);
 }

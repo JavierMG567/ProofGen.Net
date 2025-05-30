@@ -22,12 +22,12 @@ public class TicketParser :ITicketParser
         _metadataRetriever = metadataRetriever;
     }
 
-    public Ticket ParseTicket(string text, string fullName, string taxId)
+    public Ticket ParseTicket(string text, string fullName, string taxId, string invoiceTicketBillet)
     {
         try
         {
             var products = _productExtractor.Extract(text);
-            var ticket = _metadataRetriever.Retrieve(text, products, fullName, taxId);
+            var ticket = _metadataRetriever.Retrieve(text, products, fullName, taxId, invoiceTicketBillet);
             return ticket;
         }
         catch(Exception ex) 

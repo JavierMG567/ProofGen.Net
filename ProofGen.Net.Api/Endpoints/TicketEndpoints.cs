@@ -15,10 +15,11 @@ public static class TicketEndpoints
             if (archivo == null || archivo.Length == 0)
                 return Results.BadRequest("Archivo no proporcionado");
 
+            var invoiceTicketBillet = form["invoiceTicketBillet"].ToString();
             var fullName = form["fullName"].ToString();
             var taxId = form["taxId"].ToString();
 
-            var resultado = await extractor.Extract(archivo, fullName, taxId);
+            var resultado = await extractor.Extract(archivo, fullName, taxId, invoiceTicketBillet);
 
             return Results.Ok(resultado);
         })

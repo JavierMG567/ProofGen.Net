@@ -8,5 +8,5 @@ using System.Threading.Tasks;
 namespace ProofGen.Net.Domain.Interfaces;
 public interface ITicketParser
 {
-    Ticket ParseTicket(string ocrText, string fullName, string taxId);
+    Ticket ParseTicket(string ocrText, string fullName, string taxId, string invoiceTicketBillet);
 }
