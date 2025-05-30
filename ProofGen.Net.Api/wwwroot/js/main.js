@@ -1,17 +1,38 @@
 ﻿const resultado = document.getElementById("resultado");
 let lastTicketData = null;
 
+const loadingBar = document.getElementById("loadingBar");
+const progressFill = document.getElementById("progressFill");
+
+let invoiceTicketBillet = Math.floor(Math.random() * 1000000)
+    .toString()
+    .padStart(6, '0');
+
+document.getElementById("invoiceBillet").value = invoiceTicketBillet;
+
 document.getElementById("uploadForm").addEventListener("submit", async function (event) {
     event.preventDefault();
 
     const formData = new FormData();
     const fileInput = document.querySelector('input[name="archivo"]');
-    formData.append("archivo", fileInput.files[0]);
+    const fullName = document.querySelector('input[name="fullName"]').value;
+    const taxId = document.querySelector('input[name="taxId"]').value;
 
-    const procesandoMsg = document.createElement('p');
-    procesandoMsg.textContent = "Procesando nuevo ticket...";
-    procesandoMsg.className = "text-gray-500 mb-2";
-    resultado.appendChild(procesandoMsg);
+    formData.append("archivo", fileInput.files[0]);
+    formData.append("invoiceTicketBillet", invoiceTicketBillet);
+    formData.append("fullName", fullName);
+    formData.append("taxId", taxId);
+
+    // Mostrar barra y reiniciar progreso
+    loadingBar.classList.remove("hidden");
+    progressFill.style.width = "0%";
+
+    // Simular progreso mientras fetch trabaja
+    let progress = 0;
+    const simulateProgress = setInterval(() => {
+        progress = Math.min(progress + Math.random() * 10, 90);
+        progressFill.style.width = progress + "%";
+    }, 200);
 
     try {
         const response = await fetch("/api/tickets/extraer", {
@@ -22,17 +43,41 @@ document.getElementById("uploadForm").addEventListener("submit", async function 
         if (!response.ok) throw new Error(`Código ${response.status}`);
 
         const data = await response.json();
-        lastTicketData = data; // storing the data permanently.
-        procesandoMsg.remove();
+        lastTicketData = data;
+
+        // Completar barra
+        clearInterval(simulateProgress);
+        progressFill.style.width = "100%";
+
+        // Ocultar barra después de un pequeño delay
+        setTimeout(() => {
+            loadingBar.classList.add("hidden");
+            progressFill.style.width = "0%";
+        }, 500);
+
         resultado.insertAdjacentHTML('beforeend', renderTicket(data));
+
+        if (resultado.children.length > 0) {
+            document.getElementById("actionsTicket").classList.remove("hidden");
+            document.getElementById("registrationTicket").classList.remove("hidden");
+        }
+
     } catch (error) {
-        procesandoMsg.textContent = "Error al procesar: " + error.message;
-        procesandoMsg.className = "text-red-600 mb-2";
+        clearInterval(simulateProgress);
+        progressFill.style.width = "100%";
+        loadingBar.classList.add("hidden");
+
+        const errorMsg = document.createElement('p');
+        errorMsg.textContent = "Error al procesar: " + error.message;
+        errorMsg.className = "text-red-600 mb-2";
+        resultado.appendChild(errorMsg);
     }
 });
 
 document.getElementById("clearTickets").addEventListener("click", () => {
     resultado.innerHTML = "";
+    document.getElementById("actionsTicket").classList.add("hidden");
+    document.getElementById("registrationTicket").classList.add("hidden");
 });
 
 function renderTicket(data) {
@@ -46,12 +91,19 @@ function renderTicket(data) {
             <p class="font-bold text-[14px]">${data.legalName}</p>
         </div>
         <hr class="border-dashed border-t border-gray-400 my-3" />
-        <div class="mb-4">
-            <p><strong>RFC:</strong> ${data.federalTaxpayerRegistry}</p>
-            <p><strong>Fecha:</strong> ${new Date(data.date).toLocaleDateString()}</p>
-            <p><strong>Hora:</strong> ${data.hours}</p>
-            <p><strong>Caja:</strong> ${data.checkOut}</p>
-            <p><strong>Cajero:</strong> ${data.cashier}</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+            <div style="flex: 1 1 47%;">
+                <p><strong>Billet Number:</strong> ${data.billetId}</p>
+                <p><strong>FullName:</strong> ${data.fullName}</p>
+                <p><strong>TaxId:</strong> ${data.taxId}</p>
+                <p><strong>Federal Tax Registry:</strong> ${data.federalTaxpayerRegistry}</p>
+            </div>
+            <div style="flex: 1 1 47%;">
+                <p><strong>Date:</strong> ${new Date(data.date).toLocaleDateString()}</p>
+                <p><strong>Hour:</strong> ${data.hours}</p>
+                <p><strong>Checkout:</strong> ${data.checkOut}</p>
+                <p><strong>Cashier:</strong> ${data.cashier}</p>
+            </div>
         </div>
         <hr class="border-dashed border-t border-gray-400 my-3" />
         ${data.products.map(p => `
@@ -62,9 +114,9 @@ function renderTicket(data) {
         `).join("")}
         <hr class="border-dashed border-t border-gray-400 my-3" />
         <div class="text-right mb-4">
-            <p><strong>Total:</strong> $${data.totalAmount.toFixed(2)}</p>
-            <p><strong>Tarjeta:</strong> $${data.card.toFixed(2)}</p>
-            <p><strong>Cambio:</strong> $${data.change.toFixed(2)}</p>
+            <p><strong>Total Amount:</strong> $${data.totalAmount.toFixed(2)}</p>
+            <p><strong>Card:</strong> $${data.card.toFixed(2)}</p>
+            <p><strong>Change:</strong> $${data.change.toFixed(2)}</p>
         </div>
         <hr class="border-dashed border-t border-gray-400 my-3" />
         <div class="flex justify-center items-center text-center text-[11px] text-gray-600 leading-tight whitespace-pre-wrap break-words">
@@ -93,7 +145,6 @@ document.getElementById("downloadPdf").addEventListener("click", async function 
 
         const blob = await response.blob();
 
-        // Crear un enlace para descargar
         const link = document.createElement("a");
         link.href = URL.createObjectURL(blob);
         link.download = "ticket.pdf";
@@ -103,7 +154,6 @@ document.getElementById("downloadPdf").addEventListener("click", async function 
         alert("Error al descargar el PDF: " + err.message);
     }
 });
-
 
 document.getElementById("archivo").addEventListener("change", function () {
     const nombreArchivo = this.files[0] ? this.files[0].name : "Ningún archivo seleccionado";

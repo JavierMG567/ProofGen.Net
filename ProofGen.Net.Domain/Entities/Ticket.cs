@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProofGen.Net.Domain.Entities;
 public record Ticket(
+    string billetId,
+    string FullName,
+    string TaxId,
     string LegalName,
     string FederalTaxpayerRegistry,
     DateTime Date,

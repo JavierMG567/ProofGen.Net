@@ -29,7 +29,9 @@ public class TicketPdfService :ITicketPdfService
 
         doc.Add(new Paragraph("TICKET PARA FACTURACION").SetTextAlignment(TextAlignment.CENTER));
         doc.Add(new Paragraph(ticket.LegalName).SetTextAlignment(TextAlignment.CENTER));
-        doc.Add(new Paragraph($"RFC: {ticket.FederalTaxpayerRegistry}"));
+        doc.Add(new Paragraph($"Nombre Completo: {ticket.FullName}"));
+        doc.Add(new Paragraph($"RFC - Persona Moral/Fisica: {ticket.TaxId}"));
+        doc.Add(new Paragraph($"RFC - Empresa: {ticket.FederalTaxpayerRegistry}"));
         doc.Add(new Paragraph($"Fecha: {ticket.Date}"));
         doc.Add(new Paragraph($"Hora: {ticket.Hours}"));
         doc.Add(new Paragraph($"Caja: {ticket.CheckOut}"));

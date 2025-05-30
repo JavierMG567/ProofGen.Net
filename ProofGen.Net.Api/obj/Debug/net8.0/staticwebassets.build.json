@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pOApcG0Vgisv4Mh48SRW2Qp1Wzg+gZQ11DPu+xDRkRA=",
+  "Hash": "GKf0fryyBt8zQ4E/pGo2C1s8YOJq+2T4rY9dyIVRkoE=",
   "Source": "ProofGen.Net.Api",
   "BasePath": "_content/ProofGen.Net.Api",
   "Mode": "Default",
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "j9mw7sttsa",
-      "Integrity": "SWDlXQ4izVOpIVf7AH75yjyHh3mD3rqKCPfVapptvgk=",
+      "Fingerprint": "mk784mxas6",
+      "Integrity": "VgR61xQRtfU120yDBgowVvUgimutEjZsHN1yQOP8zYk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "liths37t0j",
-      "Integrity": "refM1v9aL0NguJ0DIhfEb6Enz6Ri39xoG5VviOOsckM=",
+      "Fingerprint": "pqcao87ybt",
+      "Integrity": "AYegLVRrMsd75ntZ1gILzmLTY+4TB/5kuPZXISk9Z7Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\main.js"
@@ -174,7 +174,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4987"
+          "Value": "5895"
         },
         {
           "Name": "Content-Type",
@@ -182,11 +182,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SWDlXQ4izVOpIVf7AH75yjyHh3mD3rqKCPfVapptvgk=\""
+          "Value": "\"VgR61xQRtfU120yDBgowVvUgimutEjZsHN1yQOP8zYk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 30 May 2025 00:02:16 GMT"
+          "Value": "Fri, 30 May 2025 01:40:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -196,12 +196,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SWDlXQ4izVOpIVf7AH75yjyHh3mD3rqKCPfVapptvgk="
+          "Value": "sha256-VgR61xQRtfU120yDBgowVvUgimutEjZsHN1yQOP8zYk="
         }
       ]
     },
     {
-      "Route": "index.j9mw7sttsa.html",
+      "Route": "index.mk784mxas6.html",
       "AssetFile": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Api\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -211,7 +211,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4987"
+          "Value": "5895"
         },
         {
           "Name": "Content-Type",
@@ -219,11 +219,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SWDlXQ4izVOpIVf7AH75yjyHh3mD3rqKCPfVapptvgk=\""
+          "Value": "\"VgR61xQRtfU120yDBgowVvUgimutEjZsHN1yQOP8zYk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 30 May 2025 00:02:16 GMT"
+          "Value": "Fri, 30 May 2025 01:40:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -233,7 +233,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "j9mw7sttsa"
+          "Value": "mk784mxas6"
         },
         {
           "Name": "label",
@@ -241,7 +241,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SWDlXQ4izVOpIVf7AH75yjyHh3mD3rqKCPfVapptvgk="
+          "Value": "sha256-VgR61xQRtfU120yDBgowVvUgimutEjZsHN1yQOP8zYk="
         }
       ]
     },
@@ -256,7 +256,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4463"
+          "Value": "4845"
         },
         {
           "Name": "Content-Type",
@@ -264,11 +264,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"refM1v9aL0NguJ0DIhfEb6Enz6Ri39xoG5VviOOsckM=\""
+          "Value": "\"AYegLVRrMsd75ntZ1gILzmLTY+4TB/5kuPZXISk9Z7Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 22:56:34 GMT"
+          "Value": "Fri, 30 May 2025 01:41:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -278,12 +278,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-refM1v9aL0NguJ0DIhfEb6Enz6Ri39xoG5VviOOsckM="
+          "Value": "sha256-AYegLVRrMsd75ntZ1gILzmLTY+4TB/5kuPZXISk9Z7Y="
         }
       ]
     },
     {
-      "Route": "js/main.liths37t0j.js",
+      "Route": "js/main.pqcao87ybt.js",
       "AssetFile": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Api\\wwwroot\\js\\main.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -293,7 +293,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4463"
+          "Value": "4845"
         },
         {
           "Name": "Content-Type",
@@ -301,11 +301,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"refM1v9aL0NguJ0DIhfEb6Enz6Ri39xoG5VviOOsckM=\""
+          "Value": "\"AYegLVRrMsd75ntZ1gILzmLTY+4TB/5kuPZXISk9Z7Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 May 2025 22:56:34 GMT"
+          "Value": "Fri, 30 May 2025 01:41:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -315,7 +315,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "liths37t0j"
+          "Value": "pqcao87ybt"
         },
         {
           "Name": "label",
@@ -323,7 +323,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-refM1v9aL0NguJ0DIhfEb6Enz6Ri39xoG5VviOOsckM="
+          "Value": "sha256-AYegLVRrMsd75ntZ1gILzmLTY+4TB/5kuPZXISk9Z7Y="
         }
       ]
     }

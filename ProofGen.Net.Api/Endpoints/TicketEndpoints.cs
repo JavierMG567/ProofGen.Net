@@ -10,18 +10,23 @@ public static class TicketEndpoints
         endpoint.MapPost("/api/tickets/extraer", async (HttpRequest request, ITicketExtractor extractor) =>
         {
             var form = await request.ReadFormAsync();
-            var archivo = form.Files.FirstOrDefault();
 
+            var archivo = form.Files.FirstOrDefault();
             if (archivo == null || archivo.Length == 0)
                 return Results.BadRequest("Archivo no proporcionado");
 
-            var resultado = await extractor.Extract(archivo);
+            var invoiceTicketBillet = form["invoiceTicketBillet"].ToString();
+            var fullName = form["fullName"].ToString();
+            var taxId = form["taxId"].ToString();
+
+            var resultado = await extractor.Extract(archivo, fullName, taxId, invoiceTicketBillet);
+
             return Results.Ok(resultado);
         })
-       .Accepts<IFormFile>("multipart/form-data")
-       .Produces<Ticket>(StatusCodes.Status200OK)
-       .WithName("ExtraerTicket")
-       .WithTags("Tickets");
+        .Accepts<IFormFile>("multipart/form-data")
+        .Produces<Ticket>(StatusCodes.Status200OK)
+        .WithName("ExtraerTicket")
+        .WithTags("Tickets");
     }
 
     public static void MapGeneration(this IEndpointRouteBuilder endpoint)
