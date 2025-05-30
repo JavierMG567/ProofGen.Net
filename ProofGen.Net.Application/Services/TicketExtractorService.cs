@@ -34,14 +34,14 @@ public class TicketExtractorService : ITicketExtractor
         _ticketParser = ticketParser;
     }
 
-    public async Task<Ticket> Extract(IFormFile image)
+    public async Task<Ticket> Extract(IFormFile image, string fullName, string taxId)
     {
         string tempPath = null!;
         try
         {
             tempPath = await _imageProcessor.ProcessAndSaveTemporary(image);
             var ocrText = await _ocrEngine.ExtractText(tempPath);
-            return _ticketParser.ParseTicket(ocrText);
+            return _ticketParser.ParseTicket(ocrText, fullName, taxId);
         }
         finally
         {

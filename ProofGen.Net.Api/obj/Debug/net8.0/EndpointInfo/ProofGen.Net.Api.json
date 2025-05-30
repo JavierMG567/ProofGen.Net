@@ -91,6 +91,14 @@
       "Ticket": {
         "type": "object",
         "properties": {
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "taxId": {
+            "type": "string",
+            "nullable": true
+          },
           "legalName": {
             "type": "string",
             "nullable": true

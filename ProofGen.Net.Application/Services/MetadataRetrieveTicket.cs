@@ -24,7 +24,7 @@ public class MetadataRetrieveTicket : IMetadataRetrieveTicket
         "S\\. en N\\.C\\."
     };
 
-    public Ticket Retrieve(string text, List<Product> products)
+    public Ticket Retrieve(string text, List<Product> products, string fullName, string taxId)
     {
         string legalName = ExtractCompanyName(text);
         string legalReference = ExtractRFC(text);
@@ -39,6 +39,8 @@ public class MetadataRetrieveTicket : IMetadataRetrieveTicket
         decimal change = SetDecimal(text, @"Cambio\s*[:\$]*\s*(\d+(\.\d{1,2})?)");
 
         return new Ticket(
+            FullName: fullName,
+            TaxId: taxId,
             LegalName: legalName,
             FederalTaxpayerRegistry: legalReference,
             Date: date,

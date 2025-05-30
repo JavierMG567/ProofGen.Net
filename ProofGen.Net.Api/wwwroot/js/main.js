@@ -6,7 +6,12 @@ document.getElementById("uploadForm").addEventListener("submit", async function 
 
     const formData = new FormData();
     const fileInput = document.querySelector('input[name="archivo"]');
+    const fullName = document.querySelector('input[name="fullName"]').value;
+    const taxId = document.querySelector('input[name="taxId"]').value;
+
     formData.append("archivo", fileInput.files[0]);
+    formData.append("fullName", fullName);
+    formData.append("taxId", taxId);
 
     const procesandoMsg = document.createElement('p');
     procesandoMsg.textContent = "Procesando nuevo ticket...";
@@ -47,11 +52,13 @@ function renderTicket(data) {
         </div>
         <hr class="border-dashed border-t border-gray-400 my-3" />
         <div class="mb-4">
-            <p><strong>RFC:</strong> ${data.federalTaxpayerRegistry}</p>
-            <p><strong>Fecha:</strong> ${new Date(data.date).toLocaleDateString()}</p>
-            <p><strong>Hora:</strong> ${data.hours}</p>
-            <p><strong>Caja:</strong> ${data.checkOut}</p>
-            <p><strong>Cajero:</strong> ${data.cashier}</p>
+            <p><strong>FullName:</strong> ${data.fullName}</p>
+            <p><strong>TaxId:</strong> ${data.taxId}</p>
+            <p><strong>Federal Tax Registry</strong> ${data.federalTaxpayerRegistry}</p>
+            <p><strong>Date:</strong> ${new Date(data.date).toLocaleDateString()}</p>
+            <p><strong>Hour:</strong> ${data.hours}</p>
+            <p><strong>Checkout:</strong> ${data.checkOut}</p>
+            <p><strong>Cashier:</strong> ${data.cashier}</p>
         </div>
         <hr class="border-dashed border-t border-gray-400 my-3" />
         ${data.products.map(p => `
@@ -62,9 +69,9 @@ function renderTicket(data) {
         `).join("")}
         <hr class="border-dashed border-t border-gray-400 my-3" />
         <div class="text-right mb-4">
-            <p><strong>Total:</strong> $${data.totalAmount.toFixed(2)}</p>
-            <p><strong>Tarjeta:</strong> $${data.card.toFixed(2)}</p>
-            <p><strong>Cambio:</strong> $${data.change.toFixed(2)}</p>
+            <p><strong>Total - Amount:</strong> $${data.totalAmount.toFixed(2)}</p>
+            <p><strong>Card:</strong> $${data.card.toFixed(2)}</p>
+            <p><strong>Change:</strong> $${data.change.toFixed(2)}</p>
         </div>
         <hr class="border-dashed border-t border-gray-400 my-3" />
         <div class="flex justify-center items-center text-center text-[11px] text-gray-600 leading-tight whitespace-pre-wrap break-words">

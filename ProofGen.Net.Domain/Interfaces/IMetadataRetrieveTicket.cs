@@ -8,5 +8,5 @@ using System.Threading.Tasks;
 namespace ProofGen.Net.Domain.Interfaces;
 public interface IMetadataRetrieveTicket
 {
-    Ticket Retrieve(string text, List<Product> products);
+    Ticket Retrieve(string text, List<Product> products, string fullName, string taxId);
 }
