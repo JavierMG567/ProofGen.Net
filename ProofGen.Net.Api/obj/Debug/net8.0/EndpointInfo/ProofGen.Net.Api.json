@@ -5,6 +5,29 @@
     "version": "v1"
   },
   "paths": {
+    "/api/ticket/pdf": {
+      "post": {
+        "tags": [
+          "PDF"
+        ],
+        "operationId": "GenerarPdfTicket",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ticket"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/tickets/extraer": {
       "post": {
         "tags": [

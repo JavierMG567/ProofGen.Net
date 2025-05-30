@@ -39,7 +39,7 @@ function renderTicket(data) {
     return `
     <div class="bg-white p-3 text-[12px] font-mono leading-normal text-gray-900 border border-gray-300 rounded w-[350px] mx-auto shadow">
         <div class="text-center mb-3">
-            <p class="font-bold text-[14px]">TICKET PARA FACTURACION</p>
+            <p class="font-bold text-[14px]">BILLING TICKET</p>
         </div>
         <hr class="border-dashed border-t border-gray-400 my-3" />
         <div class="text-center mb-3">
@@ -55,7 +55,7 @@ function renderTicket(data) {
         </div>
         <hr class="border-dashed border-t border-gray-400 my-3" />
         ${data.products.map(p => `
-            <div class="flex justify-between mb-1">
+            <div class="flex justify-between mb-1 font-montserrat">
                 <span class="break-words">${p.quantity} x ${p.description}</span>
                 <span>$${p.ammount.toFixed(2)}</span>
             </div>
@@ -67,8 +67,8 @@ function renderTicket(data) {
             <p><strong>Cambio:</strong> $${data.change.toFixed(2)}</p>
         </div>
         <hr class="border-dashed border-t border-gray-400 my-3" />
-        <div class="text-center text-[11px] text-gray-600 leading-tight whitespace-pre-wrap break-words">
-            ${data.address.replace(/\n/g, "<br>")}
+        <div class="flex justify-center items-center text-center text-[11px] text-gray-600 leading-tight whitespace-pre-wrap break-words">
+            ${data.address.replace(/^[\s\r\n]+|[\s\r\n]+$/g, "").replace(/\n/g, "<br>")}
         </div>
     </div>
     `;

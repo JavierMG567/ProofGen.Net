@@ -1,7 +1,33 @@
 [
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_2",
+    "ContainingType": "ProofGen.Net.Api.Endpoints.TicketEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGeneration\u003Eb__1_0",
+    "RelativePath": "api/ticket/pdf",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ticket",
+        "Type": "ProofGen.Net.Domain.Entities.Ticket",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "PDF"
+    ],
+    "EndpointName": "GenerarPdfTicket"
+  },
+  {
+    "ContainingType": "ProofGen.Net.Api.Endpoints.TicketEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapExtraction\u003Eb__0_0",
     "RelativePath": "api/tickets/extraer",
     "HttpMethod": "POST",
     "IsController": false,
