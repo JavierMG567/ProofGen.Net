@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProofGen.Net.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b5dd5aa8cabfbc9ea1497cb2efd40e7a360d1d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17d4599c11e3fb305a68dd45d0a196624fbfb3a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProofGen.Net.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProofGen.Net.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
