@@ -1,0 +1,25 @@
+﻿#resultado::-webkit-scrollbar {
+    width: 6px;
+}
+
+#resultado::-webkit-scrollbar-thumb {
+    background-color: #9CA3AF; /* gray-400 */
+    border-radius: 8px;
+}
+
+#resultado::-webkit-scrollbar-track {
+    background: #F3F4F6; /* gray-100 */
+}
+
+/* Para navegadores con soporte moderno */
+#resultado {
+    scrollbar-width: thin;
+    scrollbar-color: #9CA3AF #F3F4F6;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
