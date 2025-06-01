@@ -1,23 +1,20 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Models;
 using ProofGen.Net.Api.Endpoints;
+using ProofGen.Net.Application.Handlers;
 using ProofGen.Net.Application.Services;
 using ProofGen.Net.Domain.Entities;
 using ProofGen.Net.Domain.Interfaces;
+using ProofGen.Net.Infrastructure.Persistence.DependencyInjection;
+using ProofGen.Net.Infrastructure.Persistence.Repositories;
+using ProofGen.Net.Infrastructure.Services;
 using System.Net.Sockets;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
-
-builder.Services.AddScoped<IImageProcessor, ImageProcessor>();
-builder.Services.AddScoped<IOcrEngine, TesseractOcrEngine>();
-builder.Services.AddScoped<ITicketParser, TicketParser>();
-builder.Services.AddScoped<ITicketExtractor, TicketExtractorService>();
-builder.Services.AddScoped<IProductExtractor , ProductExtractor>();
-builder.Services.AddScoped<IMetadataRetrieveTicket,  MetadataRetrieveTicket>();
-builder.Services.AddScoped<ITicketPdfService,  TicketPdfService>();
+builder.Services.AddInfrastructure(builder.Configuration);
 
 // CORS configuration
 builder.Services.AddCors(options =>
@@ -54,5 +51,6 @@ app.UseCors(); // <<--- MUY IMPORTANTE: antes de cualquier endpoint
 // Endpoints
 app.MapExtraction();
 app.MapGeneration();
+app.MapPostBillet();
 
 app.Run();

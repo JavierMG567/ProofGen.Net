@@ -5,12 +5,12 @@
     "version": "v1"
   },
   "paths": {
-    "/api/ticket/pdf": {
+    "/api/billets": {
       "post": {
         "tags": [
-          "PDF"
+          "Billets"
         ],
-        "operationId": "GenerarPdfTicket",
+        "operationId": "SaveTicketBillet",
         "requestBody": {
           "content": {
             "application/json": {
@@ -24,16 +24,59 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
     },
-    "/api/tickets/extraer": {
+    "/api/tickets/pdf": {
+      "post": {
+        "tags": [
+          "PDF"
+        ],
+        "operationId": "GenerateTicketPdf",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ticket"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/tickets/extract": {
       "post": {
         "tags": [
           "Tickets"
         ],
-        "operationId": "ExtraerTicket",
+        "operationId": "ExtractTicket",
         "requestBody": {
           "content": {
             "multipart/form-data": {
@@ -55,6 +98,16 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -62,6 +115,33 @@
   },
   "components": {
     "schemas": {
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
+      },
       "Product": {
         "type": "object",
         "properties": {
