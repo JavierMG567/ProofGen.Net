@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8MeR5bWzNlk4/4kAcsuU+06MJHAjqRbMw5lO/ToIKIM=",
+  "Hash": "7rxFvUAXyUu3HCT8cc6zQLsgTgjdRUY60nyGSqmznoo=",
   "Source": "ProofGen.Net.Api",
   "BasePath": "_content/ProofGen.Net.Api",
   "Mode": "Default",
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pzwsma3uu3",
-      "Integrity": "BYTV5nVbOdcY6jkFII3tUc/80INOHfxrbVPPchGCXZk=",
+      "Fingerprint": "hwn2vbh2v8",
+      "Integrity": "gQBNsWH0u68Cx8EF2bBzzB7k0ivMgBp/leP4JbH1mIA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mixcbbov92",
-      "Integrity": "UpTTWckAesuobAcH5oRli7RjrT6Kvun+gQ/0CT16QWo=",
+      "Fingerprint": "iex2rrs58n",
+      "Integrity": "mly2954k70IgMn06MIn1SFB+2EHdqW39lAE34T8+e1M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\main.js"
@@ -174,7 +174,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10096"
+          "Value": "10075"
         },
         {
           "Name": "Content-Type",
@@ -182,11 +182,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BYTV5nVbOdcY6jkFII3tUc/80INOHfxrbVPPchGCXZk=\""
+          "Value": "\"gQBNsWH0u68Cx8EF2bBzzB7k0ivMgBp/leP4JbH1mIA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 30 May 2025 22:23:51 GMT"
+          "Value": "Sat, 31 May 2025 02:43:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -196,12 +196,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BYTV5nVbOdcY6jkFII3tUc/80INOHfxrbVPPchGCXZk="
+          "Value": "sha256-gQBNsWH0u68Cx8EF2bBzzB7k0ivMgBp/leP4JbH1mIA="
         }
       ]
     },
     {
-      "Route": "index.pzwsma3uu3.html",
+      "Route": "index.hwn2vbh2v8.html",
       "AssetFile": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Api\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -211,7 +211,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10096"
+          "Value": "10075"
         },
         {
           "Name": "Content-Type",
@@ -219,11 +219,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BYTV5nVbOdcY6jkFII3tUc/80INOHfxrbVPPchGCXZk=\""
+          "Value": "\"gQBNsWH0u68Cx8EF2bBzzB7k0ivMgBp/leP4JbH1mIA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 30 May 2025 22:23:51 GMT"
+          "Value": "Sat, 31 May 2025 02:43:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -233,7 +233,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pzwsma3uu3"
+          "Value": "hwn2vbh2v8"
         },
         {
           "Name": "label",
@@ -241,7 +241,52 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-BYTV5nVbOdcY6jkFII3tUc/80INOHfxrbVPPchGCXZk="
+          "Value": "sha256-gQBNsWH0u68Cx8EF2bBzzB7k0ivMgBp/leP4JbH1mIA="
+        }
+      ]
+    },
+    {
+      "Route": "js/main.iex2rrs58n.js",
+      "AssetFile": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Api\\wwwroot\\js\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10525"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mly2954k70IgMn06MIn1SFB+2EHdqW39lAE34T8+e1M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 00:12:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iex2rrs58n"
+        },
+        {
+          "Name": "label",
+          "Value": "js/main.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mly2954k70IgMn06MIn1SFB+2EHdqW39lAE34T8+e1M="
         }
       ]
     },
@@ -256,7 +301,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9643"
+          "Value": "10525"
         },
         {
           "Name": "Content-Type",
@@ -264,11 +309,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UpTTWckAesuobAcH5oRli7RjrT6Kvun+gQ/0CT16QWo=\""
+          "Value": "\"mly2954k70IgMn06MIn1SFB+2EHdqW39lAE34T8+e1M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 30 May 2025 22:25:28 GMT"
+          "Value": "Sun, 01 Jun 2025 00:12:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -278,52 +323,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UpTTWckAesuobAcH5oRli7RjrT6Kvun+gQ/0CT16QWo="
-        }
-      ]
-    },
-    {
-      "Route": "js/main.mixcbbov92.js",
-      "AssetFile": "C:\\Users\\javie\\source\\repos\\ProofGen.Net\\ProofGen.Net.Api\\wwwroot\\js\\main.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9643"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UpTTWckAesuobAcH5oRli7RjrT6Kvun+gQ/0CT16QWo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 30 May 2025 22:25:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mixcbbov92"
-        },
-        {
-          "Name": "label",
-          "Value": "js/main.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-UpTTWckAesuobAcH5oRli7RjrT6Kvun+gQ/0CT16QWo="
+          "Value": "sha256-mly2954k70IgMn06MIn1SFB+2EHdqW39lAE34T8+e1M="
         }
       ]
     }

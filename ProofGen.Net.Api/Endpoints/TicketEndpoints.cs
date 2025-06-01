@@ -3,46 +3,89 @@ using ProofGen.Net.Domain.Entities;
 using ProofGen.Net.Domain.Interfaces;
 
 namespace ProofGen.Net.Api.Endpoints;
+
 public static class TicketEndpoints
 {
     public static void MapExtraction(this IEndpointRouteBuilder endpoint)
     {
-        endpoint.MapPost("/api/tickets/extraer", async (HttpRequest request, ITicketExtractor extractor) =>
+        endpoint.MapPost("/api/tickets/extract", async (HttpRequest request, ITicketExtractor extractor) =>
         {
             var form = await request.ReadFormAsync();
+            var file = form.Files.FirstOrDefault();
 
-            var archivo = form.Files.FirstOrDefault();
-            if (archivo == null || archivo.Length == 0)
-                return Results.BadRequest("Archivo no proporcionado");
+            if (file == null || file.Length == 0)
+                return Results.BadRequest("El archivo es obligatorio.");
 
             var invoiceTicketBillet = form["invoiceTicketBillet"].ToString();
             var fullName = form["fullName"].ToString();
             var taxId = form["taxId"].ToString();
 
-            var resultado = await extractor.Extract(archivo, fullName, taxId, invoiceTicketBillet);
+            if (string.IsNullOrWhiteSpace(fullName) || string.IsNullOrWhiteSpace(taxId) || string.IsNullOrWhiteSpace(invoiceTicketBillet))
+                return Results.BadRequest("Todos los campos del formulario son requeridos.");
 
-            return Results.Ok(resultado);
+            try
+            {
+                var result = await extractor.Extract(file, fullName, taxId, invoiceTicketBillet);
+                return Results.Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return Results.Problem($"Error al extraer el ticket: {ex.Message}");
+            }
+
         })
         .Accepts<IFormFile>("multipart/form-data")
         .Produces<Ticket>(StatusCodes.Status200OK)
-        .WithName("ExtraerTicket")
+        .ProducesProblem(StatusCodes.Status400BadRequest)
+        .WithName("ExtractTicket")
         .WithTags("Tickets");
     }
 
     public static void MapGeneration(this IEndpointRouteBuilder endpoint)
     {
-        endpoint.MapPost("/api/ticket/pdf", ([FromBody] Ticket ticket, ITicketPdfService ticketPdfService) =>
+        endpoint.MapPost("/api/tickets/pdf", ([FromBody] Ticket ticket, ITicketPdfService ticketPdfService) =>
         {
             if (ticket == null)
+                return Results.BadRequest("Datos del ticket inválidos.");
+
+            try
             {
-                return Results.BadRequest("Datos del ticket inválidos");
+                var pdfBytes = ticketPdfService.Generate(ticket);
+                return Results.File(pdfBytes, "application/pdf", "ticket.pdf");
+            }
+            catch (Exception ex)
+            {
+                return Results.Problem($"Error generando el PDF: {ex.Message}");
             }
 
-            var pdfBytes = ticketPdfService.Generate(ticket);
-
-            return Results.File(pdfBytes, "application/pdf", "ticket.pdf");
         })
-        .WithName("GenerarPdfTicket")
+        .Produces(StatusCodes.Status200OK)
+        .ProducesProblem(StatusCodes.Status400BadRequest)
+        .WithName("GenerateTicketPdf")
         .WithTags("PDF");
+    }
+
+    public static void MapPostBillet(this IEndpointRouteBuilder endpoint)
+    {
+        endpoint.MapPost("/api/billets", async ([FromBody] Ticket ticket, IBilletRepository billetRepository) =>
+        {
+            if (ticket == null)
+                return Results.BadRequest("Datos del ticket inválidos.");
+
+            try
+            {
+                await billetRepository.SaveAsync(ticket);
+                return Results.Ok("Ticket guardado correctamente.");
+            }
+            catch (Exception ex)
+            {
+                return Results.Problem($"Error al guardar el ticket: {ex.Message}");
+            }
+
+        })
+        .Produces(StatusCodes.Status200OK)
+        .ProducesProblem(StatusCodes.Status400BadRequest)
+        .WithName("SaveTicketBillet")
+        .WithTags("Billets");
     }
 }

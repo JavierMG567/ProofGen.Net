@@ -36,12 +36,12 @@ document.getElementById("uploadForm").addEventListener("submit", async function 
     }, 200);
 
     try {
-        const response = await fetch("/api/tickets/extraer", {
+        const response = await fetch("/api/tickets/extract", {
             method: "POST",
             body: formData
         });
 
-        if (!response.ok) throw new Error(`Código ${response.status}`);
+        if (!response.ok) throw new Error(`Código ${response.status}...`);
 
         const data = await response.json();
         lastTicketData = data;
@@ -68,6 +68,32 @@ document.getElementById("uploadForm").addEventListener("submit", async function 
         progressFill.style.width = "100%";
         loadingBar.classList.add("hidden");
 
+        const errorMsg = document.createElement('p');
+        errorMsg.textContent = "Error al procesar: " + error.message;
+        errorMsg.className = "text-red-600 mb-2";
+        resultado.appendChild(errorMsg);
+    }
+});
+
+document.getElementById("addItem").addEventListener("click", async function (event) {
+    event.preventDefault();
+
+    const formData = new FormData();
+    formData.append("billetRigth", lastTicketData);
+
+    try {
+        const response = await fetch("/api/billets/addTicket", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(lastTicketData)
+        });
+
+        if (!response.ok) throw new Error(`Código ${response.status}/${response.message}`);
+        alert("Ticket agregado correctamente.");
+    }
+    catch (error) {
         const errorMsg = document.createElement('p');
         errorMsg.textContent = "Error al procesar: " + error.message;
         errorMsg.className = "text-red-600 mb-2";
